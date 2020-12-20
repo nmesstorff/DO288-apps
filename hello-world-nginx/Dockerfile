@@ -18,4 +18,5 @@ RUN chmod 755 /start.sh && chgrp 0 /start.sh
 EXPOSE 8080
 USER 1001
 
+RUN chmod 666 /usr/share/nginx/html/index.html
 CMD /start.sh
